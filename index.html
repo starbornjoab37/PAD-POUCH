@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pad Pouch | Carry With Confidence</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#f5f3ff;
+color:#333;
+line-height:1.6;
+}
+
+/* HEADER */
+header{
+background:#4b0082;
+color:white;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{font-weight:bold;font-size:20px}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+.nav-btn{
+background:white;
+color:#4b0082;
+padding:8px 18px;
+border-radius:20px;
+margin-left:15px;
+font-weight:bold;
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(to right,#4b0082,#5e17eb);
+color:white;
+padding:80px 20px;
+}
+
+.hero-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+flex-wrap:wrap;
+max-width:1100px;
+margin:auto;
+}
+
+.hero-text{max-width:500px}
+
+.hero h1{font-size:38px}
+
+.hero-price{
+font-size:28px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.hero img{
+width:320px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* TRUST */
+.trust{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:20px;
+font-weight:500;
+background:white;
+flex-wrap:wrap;
+}
+
+/* SECTIONS */
+.section{padding:70px 20px;text-align:center}
+.section h2{color:#4b0082;margin-bottom:40px}
+
+.features{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:25px;
+width:250px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+transition:.3s;
+}
+
+.card:hover{transform:translateY(-8px)}
+
+.product-gallery{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-bottom:20px;
+}
+
+.product-gallery img{
+width:260px;
+border-radius:12px;
+}
+
+.price{
+font-size:32px;
+font-weight:bold;
+color:#4b0082;
+}
+
+.contact{background:#ede9fe}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
+background:white;
+color:#4b0082;
+border-radius:30px;
+font-weight:bold;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+background:#4b0082;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero-content{flex-direction:column;text-align:center}
+.hero img{width:250px}
+nav{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Pad Pouch</div>
+<nav>
+<a href="#about">Why It Matters</a>
+<a href="#product">See It</a>
+<a href="#contact">Order</a>
+<a href="https://wa.me/254713781789" class="nav-btn">Order Now</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+
+<div class="hero-text">
+<h1>Small Pouch. Big Confidence.</h1>
+<p>Discreet, washable sanitary pad pouch for comfort wherever you go.</p>
+<p class="hero-price">Only KSh 100</p>
+<a href="https://wa.me/254713781789" class="btn">Order on WhatsApp</a>
+</div>
+
+<img src="image1.jpeg" alt="Pad Pouch">
+
+</div>
+</section>
+
+<section class="trust">
+<p>✔ Loved by campus girls</p>
+<p>✔ Reusable & eco-friendly</p>
+<p>✔ Bulk orders for schools & NGOs</p>
+</section>
+
+<section id="about" class="section">
+<h2>Why Pad Pouch?</h2>
+<div class="features">
+<div class="card"><h3>Discreet</h3><p>No more carrying pads loose.</p></div>
+<div class="card"><h3>Washable</h3><p>Soft & reusable fabric.</p></div>
+<div class="card"><h3>Affordable</h3><p>Only KSh 100.</p></div>
+</div>
+</section>
+
+<section id="product" class="section">
+<h2>Our Product</h2>
+<div class="product-gallery">
+<img src="image1.jpeg">
+<img src="image2.jpeg">
+</div>
+<p class="price">KSh 100</p>
+<p>Limited stock available this week</p>
+</section>
+
+<section id="contact" class="section contact">
+<h2>Contact & Orders</h2>
+<p>Click below to order directly via WhatsApp</p>
+<a href="https://wa.me/254713781789" class="btn">Chat on WhatsApp</a>
+</section>
+
+<footer>
+© 2026 Pad Pouch. All Rights Reserved.
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+anchor.addEventListener("click",function(e){
+e.preventDefault();
+document.querySelector(this.getAttribute("href"))
+.scrollIntoView({behavior:"smooth"});
+});
+});
+</script>
+
+</body>
+</html>
