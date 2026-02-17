@@ -52,4 +52,4 @@ The layout adapts seamlessly for smaller screens to support the primary traffic 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/pad-pouch.git
+git clone https://github.com/starbornjoab37/pad-pouch.git
